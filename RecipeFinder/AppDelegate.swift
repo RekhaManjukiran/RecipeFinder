@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RecipeFinder
 //
-//  Created by Manju Kiran on 08/10/2017.
+//  Created by Rekha Manju Kiran on 08/10/2017.
 //  Copyright © 2017 xDesign. All rights reserved.
 //
 
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let router = RecipeFinderRouter()
+        let navigationController = router.configureRecipeFinderViewController().navController
+        window?.rootViewController = navigationController
         return true
     }
 

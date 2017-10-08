@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		A2C866D8C52E60C425B03DEF /* Pods_RecipeFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1224AB1FBF6E461F5038595B /* Pods_RecipeFinder.framework */; };
+		C27603241F8A9B9700DC89EC /* RecipeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27603231F8A9B9700DC89EC /* RecipeItem.swift */; };
+		C27603281F8AB39700DC89EC /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27603271F8AB39700DC89EC /* RecipeDetailsViewController.swift */; };
 		C29F1AE51F8A6805003A32E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1AE41F8A6805003A32E4 /* AppDelegate.swift */; };
-		C29F1AE71F8A6805003A32E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1AE61F8A6805003A32E4 /* ViewController.swift */; };
-		C29F1AEA1F8A6805003A32E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29F1AE81F8A6805003A32E4 /* Main.storyboard */; };
+		C29F1AEA1F8A6805003A32E4 /* RecipeFinderHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29F1AE81F8A6805003A32E4 /* RecipeFinderHome.storyboard */; };
 		C29F1AEC1F8A6805003A32E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29F1AEB1F8A6805003A32E4 /* Assets.xcassets */; };
 		C29F1AEF1F8A6805003A32E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29F1AED1F8A6805003A32E4 /* LaunchScreen.storyboard */; };
 		C29F1AFA1F8A6806003A32E4 /* RecipeFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1AF91F8A6806003A32E4 /* RecipeFinderTests.swift */; };
+		C29F1B0A1F8A6F6E003A32E4 /* RecipeFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B091F8A6F6E003A32E4 /* RecipeFinderViewController.swift */; };
+		C29F1B0C1F8A6FD6003A32E4 /* RecipeFinderInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B0B1F8A6FD6003A32E4 /* RecipeFinderInteractorProtocol.swift */; };
+		C29F1B0E1F8A6FEE003A32E4 /* RecipeFinderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B0D1F8A6FEE003A32E4 /* RecipeFinderInteractor.swift */; };
+		C29F1B101F8A700C003A32E4 /* RecipeFinderPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B0F1F8A700C003A32E4 /* RecipeFinderPresenterProtocol.swift */; };
+		C29F1B121F8A701D003A32E4 /* RecipeFinderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B111F8A701D003A32E4 /* RecipeFinderPresenter.swift */; };
+		C29F1B141F8A7033003A32E4 /* RecipeFinderEntityManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B131F8A7033003A32E4 /* RecipeFinderEntityManagerProtocol.swift */; };
+		C29F1B161F8A7045003A32E4 /* RecipeFinderEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B151F8A7045003A32E4 /* RecipeFinderEntityManager.swift */; };
+		C29F1B1A1F8A712E003A32E4 /* RecipeFinderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B191F8A712E003A32E4 /* RecipeFinderTableViewCell.swift */; };
+		C29F1B1C1F8A7DD1003A32E4 /* RecipeFinderRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B1B1F8A7DD1003A32E4 /* RecipeFinderRouterProtocol.swift */; };
+		C29F1B1E1F8A7DE1003A32E4 /* RecipeFinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F1B1D1F8A7DE1003A32E4 /* RecipeFinderRouter.swift */; };
+		C2AC14DF1F8AB83900AB193C /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14DE1F8AB83900AB193C /* Globals.swift */; };
+		C2AC14E11F8ABC0500AB193C /* RecipeDetailsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC14E01F8ABC0500AB193C /* RecipeDetailsWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +43,29 @@
 		0DC40C627DA59B4CCFCCA91A /* Pods-RecipeFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecipeFinder/Pods-RecipeFinder.release.xcconfig"; sourceTree = "<group>"; };
 		1224AB1FBF6E461F5038595B /* Pods_RecipeFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8478973A01B7D8A54EB5D37B /* Pods-RecipeFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecipeFinder/Pods-RecipeFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		C27603231F8A9B9700DC89EC /* RecipeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeItem.swift; sourceTree = "<group>"; };
+		C27603271F8AB39700DC89EC /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		C29F1AE11F8A6805003A32E4 /* RecipeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29F1AE41F8A6805003A32E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C29F1AE61F8A6805003A32E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C29F1AE91F8A6805003A32E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C29F1AE91F8A6805003A32E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RecipeFinderHome.storyboard; sourceTree = "<group>"; };
 		C29F1AEB1F8A6805003A32E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C29F1AEE1F8A6805003A32E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C29F1AF01F8A6805003A32E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C29F1AF51F8A6806003A32E4 /* RecipeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29F1AF91F8A6806003A32E4 /* RecipeFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderTests.swift; sourceTree = "<group>"; };
 		C29F1AFB1F8A6806003A32E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29F1B091F8A6F6E003A32E4 /* RecipeFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderViewController.swift; sourceTree = "<group>"; };
+		C29F1B0B1F8A6FD6003A32E4 /* RecipeFinderInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderInteractorProtocol.swift; sourceTree = "<group>"; };
+		C29F1B0D1F8A6FEE003A32E4 /* RecipeFinderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderInteractor.swift; sourceTree = "<group>"; };
+		C29F1B0F1F8A700C003A32E4 /* RecipeFinderPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderPresenterProtocol.swift; sourceTree = "<group>"; };
+		C29F1B111F8A701D003A32E4 /* RecipeFinderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderPresenter.swift; sourceTree = "<group>"; };
+		C29F1B131F8A7033003A32E4 /* RecipeFinderEntityManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderEntityManagerProtocol.swift; sourceTree = "<group>"; };
+		C29F1B151F8A7045003A32E4 /* RecipeFinderEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderEntityManager.swift; sourceTree = "<group>"; };
+		C29F1B191F8A712E003A32E4 /* RecipeFinderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderTableViewCell.swift; sourceTree = "<group>"; };
+		C29F1B1B1F8A7DD1003A32E4 /* RecipeFinderRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderRouterProtocol.swift; sourceTree = "<group>"; };
+		C29F1B1D1F8A7DE1003A32E4 /* RecipeFinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinderRouter.swift; sourceTree = "<group>"; };
+		C2AC14DE1F8AB83900AB193C /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		C2AC14E01F8ABC0500AB193C /* RecipeDetailsWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +96,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C237DD451F8AD037002E648D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C27603221F8A8B3D00DC89EC /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C29F1B081F8A6F06003A32E4 /* Router */,
+				C29F1B071F8A6EF9003A32E4 /* Entity */,
+				C29F1B061F8A6EED003A32E4 /* Presenter */,
+				C29F1B051F8A6EDC003A32E4 /* Interactor */,
+				C29F1B041F8A6EC4003A32E4 /* View */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
 		C29F1AD81F8A6805003A32E4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +139,12 @@
 			isa = PBXGroup;
 			children = (
 				C29F1AE41F8A6805003A32E4 /* AppDelegate.swift */,
-				C29F1AE61F8A6805003A32E4 /* ViewController.swift */,
-				C29F1AE81F8A6805003A32E4 /* Main.storyboard */,
 				C29F1AEB1F8A6805003A32E4 /* Assets.xcassets */,
 				C29F1AED1F8A6805003A32E4 /* LaunchScreen.storyboard */,
 				C29F1AF01F8A6805003A32E4 /* Info.plist */,
+				C237DD451F8AD037002E648D /* Resources */,
+				C2AC14DD1F8AB80800AB193C /* Globals */,
+				C27603221F8A8B3D00DC89EC /* Home Screen */,
 			);
 			path = RecipeFinder;
 			sourceTree = "<group>";
@@ -110,6 +156,63 @@
 				C29F1AFB1F8A6806003A32E4 /* Info.plist */,
 			);
 			path = RecipeFinderTests;
+			sourceTree = "<group>";
+		};
+		C29F1B041F8A6EC4003A32E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C29F1AE81F8A6805003A32E4 /* RecipeFinderHome.storyboard */,
+				C29F1B091F8A6F6E003A32E4 /* RecipeFinderViewController.swift */,
+				C29F1B191F8A712E003A32E4 /* RecipeFinderTableViewCell.swift */,
+				C27603231F8A9B9700DC89EC /* RecipeItem.swift */,
+				C27603271F8AB39700DC89EC /* RecipeDetailsViewController.swift */,
+				C2AC14E01F8ABC0500AB193C /* RecipeDetailsWebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C29F1B051F8A6EDC003A32E4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C29F1B0B1F8A6FD6003A32E4 /* RecipeFinderInteractorProtocol.swift */,
+				C29F1B0D1F8A6FEE003A32E4 /* RecipeFinderInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C29F1B061F8A6EED003A32E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C29F1B0F1F8A700C003A32E4 /* RecipeFinderPresenterProtocol.swift */,
+				C29F1B111F8A701D003A32E4 /* RecipeFinderPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C29F1B071F8A6EF9003A32E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C29F1B131F8A7033003A32E4 /* RecipeFinderEntityManagerProtocol.swift */,
+				C29F1B151F8A7045003A32E4 /* RecipeFinderEntityManager.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C29F1B081F8A6F06003A32E4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C29F1B1B1F8A7DD1003A32E4 /* RecipeFinderRouterProtocol.swift */,
+				C29F1B1D1F8A7DE1003A32E4 /* RecipeFinderRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C2AC14DD1F8AB80800AB193C /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				C2AC14DE1F8AB83900AB193C /* Globals.swift */,
+			);
+			path = Globals;
 			sourceTree = "<group>";
 		};
 		F5689DFBCE095218B1FE9388 /* Frameworks */ = {
@@ -208,7 +311,7 @@
 			files = (
 				C29F1AEF1F8A6805003A32E4 /* LaunchScreen.storyboard in Resources */,
 				C29F1AEC1F8A6805003A32E4 /* Assets.xcassets in Resources */,
-				C29F1AEA1F8A6805003A32E4 /* Main.storyboard in Resources */,
+				C29F1AEA1F8A6805003A32E4 /* RecipeFinderHome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +334,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RecipeFinder/Pods-RecipeFinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,8 +387,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C29F1AE71F8A6805003A32E4 /* ViewController.swift in Sources */,
+				C2AC14E11F8ABC0500AB193C /* RecipeDetailsWebView.swift in Sources */,
+				C29F1B0E1F8A6FEE003A32E4 /* RecipeFinderInteractor.swift in Sources */,
+				C29F1B0C1F8A6FD6003A32E4 /* RecipeFinderInteractorProtocol.swift in Sources */,
+				C27603241F8A9B9700DC89EC /* RecipeItem.swift in Sources */,
 				C29F1AE51F8A6805003A32E4 /* AppDelegate.swift in Sources */,
+				C29F1B1E1F8A7DE1003A32E4 /* RecipeFinderRouter.swift in Sources */,
+				C29F1B141F8A7033003A32E4 /* RecipeFinderEntityManagerProtocol.swift in Sources */,
+				C29F1B101F8A700C003A32E4 /* RecipeFinderPresenterProtocol.swift in Sources */,
+				C29F1B0A1F8A6F6E003A32E4 /* RecipeFinderViewController.swift in Sources */,
+				C29F1B1C1F8A7DD1003A32E4 /* RecipeFinderRouterProtocol.swift in Sources */,
+				C29F1B161F8A7045003A32E4 /* RecipeFinderEntityManager.swift in Sources */,
+				C29F1B121F8A701D003A32E4 /* RecipeFinderPresenter.swift in Sources */,
+				C29F1B1A1F8A712E003A32E4 /* RecipeFinderTableViewCell.swift in Sources */,
+				C2AC14DF1F8AB83900AB193C /* Globals.swift in Sources */,
+				C27603281F8AB39700DC89EC /* RecipeDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +424,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C29F1AE81F8A6805003A32E4 /* Main.storyboard */ = {
+		C29F1AE81F8A6805003A32E4 /* RecipeFinderHome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C29F1AE91F8A6805003A32E4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = RecipeFinderHome.storyboard;
 			sourceTree = "<group>";
 		};
 		C29F1AED1F8A6805003A32E4 /* LaunchScreen.storyboard */ = {

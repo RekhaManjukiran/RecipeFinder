@@ -2,7 +2,7 @@
 //  RecipeFinderTests.swift
 //  RecipeFinderTests
 //
-//  Created by Manju Kiran on 08/10/2017.
+//  Created by Rekha Manju Kiran on 08/10/2017.
 //  Copyright © 2017 xDesign. All rights reserved.
 //
 
