@@ -6,7 +6,7 @@ def global_pods
 
   	#Api Endpoints
   	pod 'Alamofire'
-  	
+  	pod 'SDWebImage'
     pod 'MBProgressHUD'
 end
 
